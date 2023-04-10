@@ -1,0 +1,63 @@
+@qaseApiToken = 00614d87aab83cdea86312855bd3919a38c90193ccce350f2f653ed125468271
+
+### Get all projects
+# GET https://api.qase.io/v1/project/all
+# Authorization: Token {{qaseApiToken}}
+
+# curl --request GET \
+#      --url 'https://api.qase.io/v1/project?limit=10&offset=0' \
+#      --header 'Token: 00614d87aab83cdea86312855bd3919a38c90193ccce350f2f653ed125468271' \
+#      --header 'accept: application/json'
+
+# curl --request GET \
+#      --url https://api.qase.io/v1/project/SHA \
+#      --header 'Token: 00614d87aab83cdea86312855bd3919a38c90193ccce350f2f653ed125468271' \
+#      --header 'accept: application/json'
+
+curl --request GET \
+     --url 'https://api.qase.io/v1/case/SHA?limit=10&offset=0' \
+     --header 'Token: 00614d87aab83cdea86312855bd3919a38c90193ccce350f2f653ed125468271' \
+     --header 'accept: application/json'
+
+     # curl --request GET \
+     # --url https://api.qase.io/v1/case/SHA/1 \
+     # --header 'Token: 00614d87aab83cdea86312855bd3919a38c90193ccce350f2f653ed125468271' \
+     # --header 'accept: application/json'
+
+     # curl --request POST \
+     # --url https://api.qase.io/v1/run/SHA/1/complete \
+     # --header 'Token: 00614d87aab83cdea86312855bd3919a38c90193ccce350f2f653ed125468271' \
+     # --header 'accept: application/json'
+
+# curl --request POST \
+#      --url https://api.qase.io/v1/run/SHA \
+#      --header 'Token: 00614d87aab83cdea86312855bd3919a38c90193ccce350f2f653ed125468271' \
+#      --header 'accept: application/json' \
+#      --header 'content-type: application/json' \
+#      --data '
+# {
+#   "cases": [
+#     1
+#   ],
+#   "description": "RUN BY AUTOMATION",
+#   "title": "SMOKE AUTO",
+#   "include_all_cases": false
+# }
+'
+
+
+
+
+
+
+
+
+
+
+# curl --request POST \
+#      --url 'https://app.qase.io/v2/case/load' \
+#      --header 'Token: 00614d87aab83cdea86312855bd3919a38c90193ccce350f2f653ed125468271' \
+#      --header 'accept: application/json'
+#      -H "Content-Type: application/json"
+#       -d '{code: "SHA", id: 1}'
+     
